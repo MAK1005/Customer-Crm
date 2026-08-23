@@ -1,10 +1,8 @@
-# Customer CRM
-
+Customer CRM
 I built this as part of my Python learning journey. It's a CRM system for e-commerce businesses — 
 something I actually needed for my own Amazon and Shopify stores.
 
-## What it does
-
+What it does
 - Add and manage customers
 - Track products and prices
 - Log orders and their status (completed, returned, cancelled, chargeback)
@@ -13,19 +11,17 @@ something I actually needed for my own Amazon and Shopify stores.
 - Store product reviews and ratings
 - Generate business reports like most returned products, chargebacks, top sellers
 
-## Why I built it
-
+Why I built it
 I run multiple e-commerce stores and wanted a simple way to track customer issues, 
 returns and communications in one place. This project also helped me practice Python, 
 SQLite databases, and how to structure a real multi-file project.
 
-## Tech used
-
+Tech used
 - Python 3
 - SQLite — for storing all the data
 - No frameworks — just pure Python and the standard library
 
-## Project files
+Project files
 db.py # sets up all 6 database tables
 customer.py # customer functions
 product.py # product functions
@@ -36,7 +32,7 @@ reviews.py # review functions
 reports.py # business reports
 main.py # runs everything
 
-## How to run it
+How to run it
 ```bash
 git clone https://github.com/MAK1005/Customer-Crm.git
 cd Customer-Crm
@@ -46,7 +42,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## What I want to add next
+What I want to add next
 - Connect it to Shopify API so orders sync automatically
 - Add a simple web interface
 - Export reports to CSV so I can open them in Excel
