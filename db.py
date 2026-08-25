@@ -16,7 +16,7 @@ def create_table():
     cursor.execute("DROP TABLE IF EXISTS customers")
     cursor.execute("""
                 CREATE TABLE IF NOT EXISTS customers (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                id               INTEGER PRIMARY KEY ,
                 name             TEXT,
                 email            TEXT,
                 phone            INTEGER,
@@ -25,7 +25,7 @@ def create_table():
             """)
     cursor.execute("""
                 CREATE TABLE IF NOT EXISTS products (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                id               INTEGER PRIMARY KEY  ,
                 name             TEXT,
                 price            REAL,
                 category         TEXT
@@ -44,7 +44,7 @@ def create_table():
             """)
     cursor.execute("""
                 CREATE TABLE IF NOT EXISTS communications (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                id               INTEGER PRIMARY KEY ,
                 customer_id      INTEGER,
                 date             TEXT,
                 type             TEXT,
@@ -54,7 +54,7 @@ def create_table():
             """)
     cursor.execute("""
                 CREATE TABLE IF NOT EXISTS emails (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                id               INTEGER PRIMARY KEY ,
                 customer_id      INTEGER,
                 date             TEXT,
                 subject          TEXT,
@@ -67,7 +67,7 @@ def create_table():
 
     cursor.execute("""
                 CREATE TABLE IF NOT EXISTS reviews (
-                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                id               INTEGER PRIMARY KEY ,
                 customer_id      INTEGER,
                 product_id       INTEGER,
                 rating           INTEGER,
