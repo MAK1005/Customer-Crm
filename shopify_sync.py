@@ -131,11 +131,6 @@ if __name__ == "__main__":
     
     conn.close()
 
-    from reports import most_returned_products, top_selling_products
-
-    print(most_returned_products())
-    print(top_selling_products())
-
     from reports import most_returned_products, top_selling_products, chargeback_summary
 
     print("\n=== Most Returned Products ===")
