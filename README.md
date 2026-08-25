@@ -44,8 +44,14 @@ python main.py
 
 ## What I want to add next
 - Connect it to Shopify API so orders sync automatically
-- Add a simple web interface
-- Export reports to CSV so I can open them in Excel
+
+## Shopify Integration
+Connects to your Shopify store via Admin API to automatically sync:
+- Customers
+- Products  
+- Orders
+- Refunds (logged as communications with reason)
+Create a `.env` file with your credentials:
 
 ## About me
 I built this project while learning Python through a structured 6-week roadmap.
